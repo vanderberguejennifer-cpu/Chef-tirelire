@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chef Tirelire</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">🐷</span>
+    <div class="brand-text">
+      <h1>Chef Tirelire</h1>
+      <p class="tagline">Le chef qui compte chaque centime.</p>
+    </div>
+  </div>
+</header>
+<main class="ticket" id="ticket">
+  <div class="ticket-head">
+    <p class="ticket-line">RECETTES DU JOUR</p>
+    <p class="ticket-sub">Dis-moi ce que tu as dans le frigo, ou ton budget.</p>
+  </div>
+  <div class="chips" id="budgetChips">
+    <button class="chip" data-text="J'ai 5€ et presque rien dans le placard, qu'est-ce que je peux cuisiner ?">5 €</button>
+    <button class="chip" data-text="J'ai 10€ de budget pour 2 personnes ce soir, des idées ?">10 €</button>
+    <button class="chip" data-text="J'ai 15€ pour préparer des repas pour toute la semaine, aide-moi.">15 €</button>
+  </div>
+  <div class="chat" id="chat">
+    <div class="msg msg-chef">
+      <span class="msg-label">Chef Tirelire</span>
+      <p>Bonjour ! Dis-moi ce que tu as sous la main ou ton budget, et je te trouve une recette qui ne vide pas la tirelire.</p>
+    </div>
+  </div>
+  <div class="ticket-foot">
+    <p class="cut-line">— — — — — — — — — — — — — — — —</p>
+  </div>
+</main>
+<form class="composer" id="composer">
+  <textarea id="input" placeholder="Ex : des courgettes, du riz, 8€ pour 2 personnes…" rows="1" required></textarea>
+  <button type="submit" id="sendBtn">→</button>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
